@@ -1,1 +1,6 @@
-<p>rxjs works!</p>
+<div class="rxjs" *ngIf="{getProducts: getProducts$ | async} as params">
+  <div class="rxjs__product" *ngFor="let product of params.getProducts">
+
+  </div>
+</div>
+

@@ -1,0 +1,16 @@
+.rxjs{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px 10px;
+  padding: 2px;
+  margin: auto;
+  &__product{
+    width: 300px;
+    height: 400px;
+    background-color: lightgray;
+  }
+}

@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import {RxjsComponent} from '@components/rxjs/rxjs.component';
+import { OperatorsComponent } from '@components/operators/operators.component';
 
 @Component({
   selector: 'app-root',
   imports: [
-    RxjsComponent
+    OperatorsComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'

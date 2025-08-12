@@ -1,5 +1,19 @@
-<div class="rxjs" *ngIf="{getProducts: getProducts$ | async} as params">
+<div class="rxjs" *ngIf="{ getProducts: getProducts$ | async } as params">
   <div class="rxjs__product" *ngFor="let product of params.getProducts">
+    <img src="{{ product.image }}" alt="*" />
+    <div>
+      <h2>{{ product.title }}</h2>
+      <h3>
+        PRICE:
+        @if (product.price < 100) {
+          <span>{{ product.price | price }}</span>
+        } @else {
+          {{ product.discount | price }}
+          <span [appUnderline]="product.price">{{
+            product.price | price
+          }}</span>
+        }
+      </h3>
+    </div>
   </div>
 </div>
-

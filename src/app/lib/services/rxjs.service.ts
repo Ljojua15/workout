@@ -1,9 +1,10 @@
-import { Injectable } from '@angular/core';
+import { inject, Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class RxjsService {
-
-  constructor() { }
+  private http = inject(HttpClient);
+  private jsonApi = 'https://jsonplaceholder.typicode.com';
 }

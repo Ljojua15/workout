@@ -1,0 +1,11 @@
+<div class="body">
+  <div [formGroup]="postForms">
+    <input type="number" formControlName="id" />
+    <input type="number" formControlName="user" />
+    <input type="text" formControlName="title" />
+    <input type="text" formControlName="body" />
+  </div>
+
+  <button (click)="clickMake()">MAKE POST</button>
+  <button (click)="clickPost()">GET POST</button>
+</div>

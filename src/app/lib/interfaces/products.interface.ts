@@ -9,4 +9,7 @@ export interface IProduct {
     rate: number;
     count: number;
   };
+  mappedPrice?: number;
+  prefix?: string;
+  discount?: number;
 }

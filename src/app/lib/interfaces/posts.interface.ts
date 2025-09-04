@@ -1,6 +1,6 @@
 export interface IPosts {
-  id: number;
-  user: number;
-  title: string;
-  body: string;
+  id: number | null;
+  user: number | null;
+  title: string | null;
+  body: string | null;
 }

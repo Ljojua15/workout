@@ -31,7 +31,6 @@ export class RxjsComponent implements OnInit {
         ...x,
         mappedPrice: x.price * 2,
         prefix: 'PRE' + x.category,
-
         discount: x.price / 2,
       })),
     ),

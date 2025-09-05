@@ -1,0 +1,61 @@
+.gorila {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  &__run {
+    width: 200px;
+    height: 200px;
+    background: url("public/monkey.png") no-repeat 0 0;
+    background-size: 1200px 400px;
+    animation: run_monkey 1.2s steps(6) infinite;
+  }
+  &__star {
+    width: 100px;
+    height: 100px;
+    background: url("public/star.png") no-repeat 0 0;
+    background-size: 1100px 200px;
+    animation: run_star 0.8s steps(11) infinite;
+  }
+}
+
+@keyframes run_monkey {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: -1200px 0;
+  }
+  50.01% {
+    background-position: 0 -200px;
+  }
+  100% {
+    background-position: -1200px -200px;
+  }
+}
+@keyframes run_star {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: -1100px 0;
+  }
+  50.01% {
+    background-position: 0 -100px;
+  }
+  100% {
+    background-position: -1100px -100px;
+  }
+}
+
+@keyframes rotateStar {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
